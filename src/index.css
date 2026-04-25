@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Tahoma", "Verdana", Arial, sans-serif;
+  --color-vista-blue: #4285F4;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-vista-blue);
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    @apply min-h-screen text-gray-900 select-none;
+  }
+}
+
+@layer components {
+  .retro-card {
+    @apply bg-[#f0f0f0] border-2 border-[#888] rounded p-3 shadow-md;
+  }
+
+  .retro-header-label {
+    @apply bg-[#555] text-white px-2 py-1 text-sm font-bold rounded-sm mb-3 uppercase shadow-inner;
+  }
+
+  .n64-logo {
+    @apply bg-red-600 text-white font-bold text-2xl px-3 py-1 border-2 border-white shadow-md italic transform -skew-x-12 inline-block;
+  }
+
+  .glossy-gradient {
+    background: linear-gradient(to bottom, #fdfdfd 0%, #d1d1d1 100%);
+  }
+
+  .game-button {
+    @apply w-10 h-10 bg-gray-300 border-2 border-white rounded-full flex items-center justify-center shadow-md active:shadow-inner hover:bg-gray-200 transition-all;
+  }
+
+  .rom-button {
+    background: linear-gradient(to bottom, #fde047 0%, #ca8a04 100%);
+    @apply hover:from-yellow-200 hover:to-yellow-500 px-8 py-3 border-2 border-white rounded shadow-lg text-gray-900 font-black text-lg active:translate-y-px transition-all;
+  }
+}
+
+/* Scrollbar Style 2008 */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #eee;
+  border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border: 1px solid #aaa;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+

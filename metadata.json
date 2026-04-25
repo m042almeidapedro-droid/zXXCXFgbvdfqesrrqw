@@ -1,0 +1,6 @@
+{
+  "name": "RetroVault 64: The Emulator Portal",
+  "description": "A high-performance Mario 64 emulator with WebAssembly core and support for ROM hacks. Featuring a classic 2008 aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
